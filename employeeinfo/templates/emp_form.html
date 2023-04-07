@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body {
+          background-image: url("https://img.freepik.com/premium-photo/human-resources-officer-recruitment-personnel-business-partners-select-employees-work-company_113717-129.jpg?w=1380");
+          background-repeat: no-repeat;
+          background-size: 1500px 750px;
+        }
+        button { 
+            height: 50px; 
+            width: 400px; 
+            background-color: #4CAF50;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            } 
+    </style>
+    <body>  
+        <br>
+        <br>
+        <br>
+        <br>
+       <form method="post"><center>
+        {% csrf_token %} <table border=1><th>{{form.as_table}}</th></table><br>
+        <button type="submit">Save</button></center>
+       </form>
+    </body>
+</html>
